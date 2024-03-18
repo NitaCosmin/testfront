@@ -1,0 +1,123 @@
+
+.ProjectCardContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 31vw; 
+    height: 21vw;
+    background-color:transparent;
+    flex-direction: column;
+    transform: scale(0.5);
+    margin-top: 0.3vw;
+    
+    
+}
+
+.ProjectBeckgroundCard-Style {
+    width: 60vw;
+    height: auto;
+   
+}
+.ProjectCardContent
+{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap:0vw;
+    width: 60vw;
+}
+
+.ProjectImg-Style
+{
+    width: 29.5vw;
+    height: auto;
+    margin-top: -44vw;
+    
+}
+.ProjectFieldContentLabel{
+font-family: 'Arame-Mono', sans-serif;
+font-size: 2.5vw;
+}
+.ProjectFieldNameLabel{
+font-family: 'Arame-Mono', sans-serif;
+font-size: 1vw;
+}
+
+.ProjectFildGap
+{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap:0.1vw;
+}
+.ProjectCardFields
+{
+    margin-left: 1.7vw;
+}
+
+.Projectexpendbutton{
+    
+    margin-left: 52vw;
+    display: inline-flex; /* Change display to inline-flex for vertical alignment */
+    align-items: center; /* Vertically align content */
+    
+    
+   
+}
+.Projectexpendbutton .p-button {
+   
+    background-color: #048097 !important; /* Use !important to override PrimeReact styles */
+    width: 5vw;
+    height: 5vw;
+    border-radius: 0.7vw;
+    border: none;
+    font-size: 4vw;
+    font-family: "Goudy Stout", sans-serif;
+    color: white;
+    padding: 0vw;
+    margin: 0vw;
+}
+
+.ProjectDate
+{  display:flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 17vw;
+    height: 5vw;
+    background-color: #048097;
+    z-index: 2;
+    margin-top: -76.5vw;
+    margin-left: 33vw;
+    border-radius: 5vw;
+    font-family: 'Arame-Mono', sans-serif;
+    color: white;
+    font-size: 1.5vw;
+}
+
+
+.image-button{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: 5vw;
+    width: 5vw;
+    background-color: #048097;
+    z-index: 2;
+    border-radius: 25vw;
+    border: none;
+    margin-top: -78vw;
+    margin-left: 51.5vw;
+}
+.FavoriteButton
+{
+    width: 1.7vw;
+    height: 1.9vw;
+}
+@font-face {
+    font-family: 'Arame-Mono';
+    src: url('../../public/fonts/Arame-Mono.ttf') format('truetype');
+}

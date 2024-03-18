@@ -1,0 +1,294 @@
+.AdminContainer {
+    display: flex;
+     user-select: none;
+    height: 100vh;
+    width: 100vw;
+    background-color: #048097; 
+    gap:0.1vw
+}
+.AdminContainer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.1) 0.1vw, transparent 0.1vw),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 0.1vw, transparent 0.1vw);
+    background-size: 3vw 3vw; /* Adjust the size of the squares */
+    pointer-events: none;
+    z-index: 0;
+}
+
+.DepList
+{
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: flex-start;
+    align-items: center;
+    width: 59vw;
+    height: 96%; /* Fixed height */
+    margin-top: 1.2vw;
+    margin-left: 11vw;
+    gap:0.1vw;
+}
+
+
+.DepListContainer {
+    
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: flex-start;
+    align-items: center;
+    width: 59vw;
+    height: 92%; /* Fixed height */
+    overflow-y: auto;
+    gap: 1vw;
+
+}
+
+.DepListContainer::-webkit-scrollbar {
+    width: 0vw; /* Width of the scrollbar */
+}
+
+
+
+
+.AddRow
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width:50vw ;
+    height: 3.9vw;
+    gap:2.5vw;
+   
+}
+
+.namePageDep {
+    width: 20vw;
+    height: 3.5vw;
+    background-color: #ECFCFF; 
+    border-radius: 0.7vw;
+    align-items: center;
+    display: flex; /* Adaugă flexbox */
+    justify-content: center; /* Aliniază conținutul pe orizontală */
+    flex-direction: column; /* Așază conținutul pe verticală */
+    margin-left: 1.5vw;
+}
+.titleDep {
+    text-align: center;
+    font-size: 1.7vw;
+    font-family: 'Arame-Mono';
+    color: black;
+}
+
+.addDep {
+    width: 3.5vw;
+    height: 3.5vw;
+    background-color: #ECFCFF; 
+    border-radius: 5vw;
+    display: flex;
+    align-items: center; /* Aliniază conținutul pe verticală */
+    justify-content: center; /* Aliniază conținutul pe orizontală */
+   
+}
+
+.OthersContainer
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: 27vw;
+    height: 56.5vw;
+    height: 96%;
+    margin-top:1.2vw;
+    margin-left: 1vw;
+    
+   
+
+}
+.ProfileRectangle
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 0.1vw;
+    width: 26vw;
+    height: 14.5vw;
+
+    
+}
+.RectangleBackground {
+    margin-top: -0.2vw;
+    width: 25vw;
+    height: 15vw;
+    position: relative; 
+}
+
+.titleProfile {
+    text-align: center;
+    font-size: 1.7vw;
+    font-family: 'Arame-Mono';
+    color: black;
+    position: absolute; 
+    top: 0.6vw; 
+    right:19.5vw ; 
+    z-index: 1;
+}
+
+.EditIcon {
+    width: 1.5vw;
+    height: auto;
+    position: absolute; 
+    top: 2.2vw; 
+    right:5vw; 
+    z-index: 1; 
+}
+
+
+.PhotoProfile
+{
+
+    width: 7vw;
+    height: 7vw;
+    border-radius:25vw;
+    margin-top: -12.7vw; 
+    z-index: 1;
+    
+   
+}
+.AdmName
+{
+   
+    font-size: 1.7vw;
+    font-family: 'Arame-Mono';
+    color: rgb(0, 0, 0);
+    margin-top: 0vw;
+    z-index: 1;
+}
+.AdmEmail
+{
+    font-size: 1vw;
+    margin-top: -2.2vw;
+    z-index: 1;
+}
+
+
+.CalendarRectangle
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.5vw;
+    width: 26vw;
+    height:20vw;
+    margin-top: 0.3vw;
+    position: relative;
+
+}
+.BigRectangleBackground
+{
+    width: 25vw;
+    height:19.5vw;
+
+}
+
+.Calendar
+{
+    background-color: #ECFCFF;
+    z-index: 2;
+    position: absolute;
+    width: 25vw;
+    height: 14vw;
+    font-size: 1.2vw;
+    color: #082A3E;
+    top: -2.5vw;
+    gap: 0.5vw;
+    padding: 0vw;
+    margin-top: 15%;
+    border-radius: 1.5vw;
+    
+    
+}
+
+.EmployeeListConntainer{
+    position: relative;
+    background-color: #ECFCFF;
+    width: 25vw;
+    height:40%;
+    border-radius: 1.5vw;
+    margin-bottom: 0.5vw;
+}
+.titleEmployee{
+
+    text-align: center;
+    font-size: 1.2vw;
+    font-family: 'Arame-Mono';
+    color: black;
+    position: absolute; 
+    width: 15vw;
+    top: 1vw; 
+    left: 0vw; 
+    z-index: 1;
+}
+.EmployeeList {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    height: 78%;
+    margin-top: 3.5vw;
+    margin-left: 0vw;
+    gap: 1.5vw;
+    position: absolute;
+    z-index: 1;
+    overflow-y: auto; /* Adaugă un scrollbar vertical */
+}
+.EmployeeList::-webkit-scrollbar {
+    width: 0vw; /* Width of the scrollbar */
+}
+
+.EmployeeRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 2vw;
+    width: 100%;
+    gap: 1vw;
+    margin-top: 0.5vw;
+}
+
+.EmployeeLstImg {
+    margin-left: 1vw;
+    width: 3vw;
+    height: 3vw;
+}
+
+.EmployeeLstName {
+    font-size: 1.1vw;
+    color: black;
+}
+
+
+
+
+@font-face {
+    font-family: 'Arame-Mono';
+    src: url('../../public/fonts/Arame-Mono.ttf') format('truetype');
+}
+
+
+
+
+
+
+
+

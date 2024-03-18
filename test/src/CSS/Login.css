@@ -1,0 +1,210 @@
+.HomeContainer-Login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 97vh;
+    position: relative; 
+}
+.NameLabel-Login
+{
+    user-select: none;
+}
+
+.HomeBackground-STYLE-Login {
+    width: 60vw;
+    height: auto; 
+    padding-top: 1.5vw;
+    z-index: 0;
+    margin: 0 auto; 
+}
+
+.HomeContent-Login{
+    position: absolute; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+.Login
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.Line-STYLE-Login {
+    position: absolute; 
+    top: -15.2vw; 
+    left:-4.15vw; 
+    z-index: 2;
+    width: 33.75vw;
+    height: auto;
+}
+
+
+.Line1-STYLE-Login
+{
+
+    position: absolute; 
+    top: 15.75vw; 
+    right:-4.15vw; 
+    z-index: 2;
+    width: 33.75vw;
+    height: auto;
+   
+}
+
+.Ellipse-STYLE-Login
+{
+    position:absolute;
+    top: 15vw; 
+    width: 1.6vw;
+    height: auto;
+    right: -6.3vw;
+  
+    
+}
+
+.Ellipse1-STYLE-Login
+{
+    position:absolute;
+    top: 15vw; 
+    width: 1.65vw;
+    height: auto;
+    right: -8.4vw;
+}
+
+.Ellipse2-STYLE-Login
+{
+    position:absolute;
+    top: 17.1vw; 
+    width: 1.6vw;
+    height: auto;
+    right: -6.37vw;
+}
+
+.NameLabel-Login
+{
+    position: absolute; 
+    top: -16.87vw; 
+    color: white;
+    font-family: 'Arame-Mono', sans-serif;
+    font-size: 1.6vw;
+    font-weight: bold;
+    right: -27.75vw;
+    letter-spacing: 0.08vw;
+}
+.NameLabel1-Login
+{
+    position: absolute; 
+    top: -14.5vw; 
+    color: white;
+    font-family: 'Arame-Mono', sans-serif;
+    font-size: 1.9vw;
+    font-weight: bold;
+    right: -26vw;
+    letter-spacing: 0.08vw;
+    transition: transform 0.3s ease; 
+    transform-origin: center;
+}
+
+.NameLabel-Resset-Login
+{
+    position: absolute; 
+    top: 14vw; 
+    color: white;
+    font-family: 'Arame-Mono', sans-serif;
+    font-size: 1.3vw;
+    font-weight: bold;
+    left: -28vw;
+    letter-spacing: 0.08vw;
+    transition: transform 0.3s ease; 
+    transform-origin: center;
+}
+.NameLabel1-Login:hover
+{
+    transform: scale(1.18);
+}
+
+.NameLabel-Resset-Login:hover
+{
+    transform: scale(1.18);
+}
+
+
+.ChoiceLabel-Login {
+    position: absolute; 
+    top: -17.79vw; 
+    left: -24.5vw;
+    color: white;
+    font-family: 'Arame-Mono', sans-serif;
+    font-size: 4.87vw;
+    font-weight: bold;
+    letter-spacing: 0.1vw;
+    transition: transform 0.3s ease; 
+    transform-origin: center;
+}
+
+.textbox-Login
+{
+    width: 30vw;
+    height: auto;
+    background-color: #048097;
+    text-align: center;
+    border: none;
+    font-size: 2.2vw;
+    color: white;
+    padding: 0vw;
+    overflow: auto; 
+    border-radius: 1vw;
+    
+}
+
+
+
+.textbox-Login::placeholder {
+    color: white; 
+    text-align: center;
+    font-family: Arame-Mono, sans-serif;
+
+}
+.textbox-Login:focus {
+    outline: none; /* Remove default focus outline */
+}
+
+.Collumn-Input-Login {
+    position: absolute; 
+    z-index: 2;
+    top:-2.5vw;
+    width: 30vw;
+    height: auto;
+    display: flex;
+    flex-direction: column; /* Set the flex direction to column */
+    justify-content: center;
+    gap:2.25vw;
+}
+
+.button-Login{
+    position: absolute; 
+    top: 14.25vw; 
+    width:11.25vw;
+    height:3.37vw;
+    color: black;
+    font-family: 'Arame-Mono', sans-serif;
+    font-size: 1.5vw;
+    right : -24.75vw;
+    letter-spacing: 0.08vw;
+    background-color:#FFD600;
+    border:0.1vw solid #b98a00;
+    border-radius: 1.12vw;
+}
+
+@font-face {
+    font-family: 'Arame-Mono';
+    src: url('../../public/fonts/Arame-Mono.ttf') format('truetype');
+}

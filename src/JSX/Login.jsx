@@ -28,14 +28,18 @@ const Login = () => {
     try {
       const response = await axios.post('https://autobotzi-ccec90c77ecb.herokuapp.com/auth/sign-in', formData);
       const { token } = response.data;
-      document.cookie = `token=${token}`;
-      document.cookie = `email=${formData.email}`
+      // document.cookie = `token=${token}`;
+      // document.cookie = `email=${formData.email}`
+      sessionStorage.setItem('token', token);
+      sessionStorage.setItem('email', formData.email);
       console.log("Login successful. Token:", token);
       console.log("Login successful. email:", formData.email);
       navigate("/admin"); // Use navigate function to redirect to admin page upon successful login
     } catch (error) {
       setShowModal(true); // Set showModal to true to open the modal
       console.error("Login failed: ", error);
+      console.log("Login successful. Token:", token);
+      console.log("Login successful. email:", formData.email);
     }
   };
 

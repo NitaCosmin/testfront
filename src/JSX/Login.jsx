@@ -28,8 +28,8 @@ const Login = () => {
     try {
       const response = await axios.post('https://autobotzi-ccec90c77ecb.herokuapp.com/auth/sign-in', formData);
       const { token } = response.data;
-      sessionStorage.setItem('token', token);
-      sessionStorage.setItem('email', formData.email);;
+      document.cookie = `token=${token}`;
+      document.cookie = `email=${formData.email}`
       console.log("Login successful. Token:", token);
       console.log("Login successful. email:", formData.email);
       navigate("/admin"); // Use navigate function to redirect to admin page upon successful login

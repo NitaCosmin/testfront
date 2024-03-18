@@ -7,7 +7,8 @@ import Line from '../Imagini/Line.png';
 import Ellipse from '../Imagini/Ellipse.png';
 import axios from 'axios'; // Import axios for making HTTP requests
 import Modal from 'react-modal'; // Import React Modal
-
+import { useContext } from 'react';
+import { UserDataContext } from './UserDataContext';
 Modal.setAppElement('#root'); // Set the root element for accessibility
 
 const Login = () => {
@@ -23,13 +24,14 @@ const Login = () => {
     setFormData({ ...formData, [name]: value });
   };
 
+  const { setToken, setEmail } = useContext(UserDataContext);
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
       const response = await axios.post('https://autobotzi-ccec90c77ecb.herokuapp.com/auth/sign-in', formData);
       const { token } = response.data;
-      document.cookie = `token=${token}`;
-      document.cookie = `email=${formData.email}`
+      setToken(token);
+      setEmail(formData.email);
       console.log("Login successful. Token:", token);
       console.log("Login successful. email:", formData.email);
       navigate("/admin"); // Use navigate function to redirect to admin page upon successful login
@@ -76,4 +78,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Login;

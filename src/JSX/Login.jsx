@@ -22,14 +22,14 @@ const Login = () => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
-
+  
   const handleSubmit = async (e) => {
+    
     e.preventDefault();
     try {
       const response = await axios.post('https://autobotzi-ccec90c77ecb.herokuapp.com/auth/sign-in', formData);
       const { token } = response.data;
-      // document.cookie = `token=${token}`;
-      // document.cookie = `email=${formData.email}`
+      
       sessionStorage.setItem('token', token);
       sessionStorage.setItem('email', formData.email);
       console.log("Login successful. Token:", token);
@@ -38,7 +38,7 @@ const Login = () => {
     } catch (error) {
       setShowModal(true); // Set showModal to true to open the modal
       console.error("Login failed: ", error);
-      console.log("Login successful. Token:", token);
+      
       console.log("Login successful. email:", formData.email);
     }
   };

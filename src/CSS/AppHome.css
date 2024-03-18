@@ -1,0 +1,96 @@
+
+.DepInfoContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: 59vw;
+    height: 55.9vw;
+    height: 99%;
+    gap: 0.2vw;
+    margin-left: -1.1vw;
+    
+   
+}
+
+.AddRowDep
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width:51vw ;
+    height: 3.9vw;
+    gap:21.5vw;
+   
+}
+
+.namePageDep-Home {
+    width: 25vw;
+    height: 3.5vw;
+    background-color: #ECFCFF; 
+    border-radius: 0.7vw;
+    align-items: center;
+    display: flex; /* Adaugă flexbox */
+    justify-content: center; /* Aliniază conținutul pe orizontală */
+    flex-direction: row; /* Așază conținutul pe verticală */
+    margin-left: 1.5vw;
+}
+
+.AboutProject-Home
+{
+    width: 17vw;
+    height: 3.5vw;
+    background-color: #ECFCFF; 
+    border-radius: 0.7vw;
+    align-items: center;
+    display: flex; /* Adaugă flexbox */
+    justify-content: center; /* Aliniază conținutul pe orizontală */
+    flex-direction: row; /* Așază conținutul pe verticală */
+    margin-left: 1.5vw;
+
+}
+.titleDep-Home {
+    text-align: center;
+    font-size: 1.7vw;
+    font-family: 'Arame-Mono';
+    color: black;
+}
+
+.addDep-Home {
+    width: 3.5vw;
+    height: 3.5vw;
+    background-color: #ECFCFF; 
+    border-radius: 5vw;
+    display: flex;
+    align-items: center; /* Aliniază conținutul pe verticală */
+    justify-content: center; /* Aliniază conținutul pe orizontală */
+   
+}
+
+.DepInfoBackground
+{
+    width: 55vw;
+    height: 14vw;
+    border-radius: 3vw;
+
+}
+
+.AboutProjectBackground
+{
+    width: 55vw;
+    height: 23vw;
+    border-radius: 3vw;
+}
+.EmployeeList
+{
+    font-size: 1.7vw;
+    gap:1vw;
+   
+    padding: 0vw;
+    
+    margin-top: 3vw;
+
+   
+
+}

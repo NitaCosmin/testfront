@@ -1,0 +1,73 @@
+.MessageContainer
+{
+    position: relative;
+    top: 4%;
+    left: 10%;
+    height: 90%;
+    width: 65%;
+    border-radius: 2.5vw;
+    background-color: #E5F3FE;
+}
+
+.MessageBox{
+    position: relative;
+    top: 0.5%;
+    left: 0.5%;
+    border-radius: 2.5vw;
+    border-bottom-right-radius: 0vw;
+    border-bottom-left-radius: 0vw;
+    height: 90%;
+    width: 99%;
+    background-color: #11d0f1;
+
+}
+
+.bottomMessage{
+    
+    position: relative;
+    background-color: #2d0f42;
+    height: 9.5%;
+    left: 0.5%;
+    border-radius: 2.5vw;
+    border-top-right-radius: 0vw;
+    border-top-left-radius: 0vw;
+    width: 99%;
+    justify-content: center;
+
+}
+
+.inputMessage{
+    position: relative;
+    width: 77%;
+    margin-left: 2%;
+    top: 1%;
+    height: 77%;
+    border-radius: 2.5vw;
+
+
+}
+.btn1,.btn2,.btn3{
+    top: 5%;
+    position: relative;
+    margin-left: 2%;
+    width: 2.5vw;
+    height: 2.5vw;
+    border-radius: 2.5vw;
+
+}
+
+
+
+.ContactListContainer
+{
+
+    position: relative;
+    top: 4%;
+    left: 13%;
+    height: 90%;
+    width: 19%;
+    border-radius: 2.5vw;
+    background-color: #ECFCFF;
+    overflow-y: auto; /* Adăugați bara de derulare pe axa Y dacă conținutul este prea lung */
+
+}

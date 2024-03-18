@@ -1,0 +1,223 @@
+.workspaceProjects {
+    user-select: none;
+    height: 100vh;
+    width: 100vw;
+    background-color: #048097; 
+}
+.workspaceProjects::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.1) 0.1vw, transparent 0.1vw),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 0.1vw, transparent 0.1vw);
+    background-size: 3vw 3vw; /* Adjust the size of the squares */
+    pointer-events: none;
+    z-index: 0;
+}
+
+.headerProjects{
+
+    user-select: none;
+    position: relative; 
+    top: 2%;
+    left: 11%;
+    height: 3vw;
+    width: 85%;
+    display: flex;
+    justify-content: space-between;  
+
+}
+
+.namePageProject {
+    width: 20%;
+    height: 100%;
+    background-color: #ECFCFF; 
+    border-radius: 1.2vw;
+    align-items: center;
+    display: flex; /* Adaugă flexbox */
+    justify-content: center; /* Aliniază conținutul pe orizontală */
+    flex-direction: column; /* Așază conținutul pe verticală */
+}
+
+.titleProjects {
+    user-select: none;
+    text-align: center;
+    font-size: 1.7vw;
+    font-family: 'Arame-Mono';
+    color: #082A3E;
+}
+
+.addProjects {
+    user-select: none;
+    width: 3vw;
+    height: 100%;
+    background-color: #ECFCFF; 
+    border-radius: 3vw;
+    display: flex;
+    margin-right: 10vw;
+    align-items: center; /* Aliniază conținutul pe verticală */
+    justify-content: center; /* Aliniază conținutul pe orizontală */
+}
+
+
+svg {
+
+    color: #082A3E;
+    width: 2vw; /* Lățimea SVG-ului */
+    height: 2vw; /* Înălțimea SVG-ului se ajustează automat */
+    margin-top: 0.3vw;
+}
+.tooltipInputProj,
+.tooltipProj{
+    pointer-events: none;
+    user-select: none;
+    text-align: center;
+    top: 50%; 
+    font-size: 0.7vw;
+    position: absolute;
+    font-family: 'Arame-Mono', sans-serif;
+    opacity: 0;
+    color: #ECFCFF;
+    top: 50%; /* Plasează tooltip-ul la 50% distanță de partea de sus a inputului */
+}
+
+.tooltipInputProj{
+    transform: translateX(35%);
+}
+
+.addProjects:hover .tooltipProj {
+    opacity: 1;
+    transition: all 0.2s ease;
+    top: 105%; 
+
+}
+
+.searchProject{
+    height: 100%;
+    width: 15vw;
+    margin-right: 9vw;
+
+}
+
+.searchProject{
+    align-items: center; /* Aliniază conținutul pe verticală */
+    justify-content: center; 
+    text-align: center;
+
+}
+
+.inputSearchProject{
+
+    font-family: 'Arame-Mono';
+    color: #082A3E;
+    background-color: #ECFCFF;
+    border-radius: 1.2vw;
+    border: none;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    font-size: 1.5vw;
+    align-items: center; /* Aliniază conținutul pe verticală */
+    justify-content: center; /* Aliniază conținutul pe orizontală */
+}
+
+
+.inputSearchProject:focus::placeholder {
+    opacity: 0; /* Placeholder-ul va fi invizibil atunci când inputul este activat */
+}
+
+.inputSearchProject:focus{
+    outline: none; /* Remove default focus outline */
+}
+
+.inputSearchProject:focus ~.tooltipInputProj{
+
+    opacity: 1;
+    transition: all 0.2s ease;
+    top: 105%; 
+}
+.inputSearchProject::placeholder
+{
+    text-align: center;
+    font-size: 1.5vw;
+    color: #082A3E;
+    font-family: 'Arame-Mono';
+    top:50%;
+}
+
+
+
+.dropdownToggle {
+    margin-right: 5vw; /* Margin dreapta */
+    display: flex; /* Folosește flexbox pentru aliniere */
+    justify-content: center; /* Aliniaza continutul pe orizontala */
+    align-items: center; /* Aliniază conținutul pe verticală */
+    height: 100%;
+    width: 15vw;
+    cursor: pointer;
+    background-color: #ECFCFF;
+    border-radius: 1.2vw;
+}
+
+
+.dropdownProject {
+    position: relative;
+    font-family: 'Arame-Mono';
+    font-size: 1.5vw;
+    text-align: center;
+    color: #082A3E;
+    
+
+}
+
+.dropdownToggle {
+    height: 100%;
+    width: 15vw;
+    cursor: pointer;
+    background-color: #ECFCFF;
+    border-radius: 1.2vw;
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: 100%;
+  background-color: #ECFCFF;
+  margin-top: 0.2vw;
+  width: 15vw;
+  border-radius: 1.2vw;
+  padding: 0.2vw;
+  font-size: 1.3vw;
+
+}
+
+.dropdownItem {
+  cursor: pointer;
+  padding: 0.3vw;
+
+}
+
+
+/*Projects list Varianta*/
+
+.ProjectListContainer {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: flex-start;
+    align-items: center;
+    width: 70vw;
+    height: 86%; /* Fixed height */
+    margin-left: 13vw;
+    margin-top: 3vw;
+    width: 70%;
+    overflow-y: auto;
+    gap: 1vw;
+}
+
+.ProjectListContainer::-webkit-scrollbar {
+    width: 0vw; /* Face scrollbar-ul invizibil pe Chrome și alte browsere bazate pe WebKit */
+}

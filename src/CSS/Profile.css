@@ -1,0 +1,237 @@
+.ProfileContainer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative; 
+    background-color: #048097;
+    height: 100vh;
+    width: 100vw;
+    gap: 0.1vw;
+}
+
+.ProfileContainer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.1) 0.1vw, transparent 0.1vw),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 0.1vw, transparent 0.1vw);
+    background-size: 3vw 3vw; /* Adjust the size of the squares */
+    pointer-events: none;
+    z-index: 0;
+}
+
+.ProfileItems
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 59vw;
+    height: 96%; 
+    margin-top: 1.2vw;
+    margin-left: 7vw;
+    gap:0.1vw;
+    
+}
+.ProfileRow
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 59vw;
+    flex-direction: row;
+    height: 18vw;
+    gap: 0vw;
+   
+}
+.ProfileBkg{
+    width: 58vw;
+    height: 99%;
+    z-index: 1;
+}
+.ProfileCollumn
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25vw;
+    flex-direction: column;
+    height: 22vw;
+    gap: 0vw;
+    z-index: 2;
+    position:absolute;
+    margin-left: -34vw;
+
+}
+.PhotoProfile1
+{
+    width: 13vw;
+    height: 13vw;
+    
+    border-radius: 25vw;
+}
+.ProfileCollumn1
+{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 34vw;
+    flex-direction: column;
+    height: 20vw;
+    gap: 0.1vw;
+    margin: 0vw;
+    padding: 0vw;
+    z-index: 2;
+    position:absolute;
+   
+    margin-right: -25vw;
+
+}
+.LabelInfoProfile
+{
+  margin-left: 2vw;
+    z-index: 2;
+    font-size: 1.6vw;
+    font-family: 'Arame-Mono';
+    color: black;    
+    margin-bottom: -1vw;
+   
+}
+.NameLabelProfile
+{
+    margin-left: 2vw;
+    z-index: 2;
+    font-size: 1.1vw;
+    font-family: 'Arame-Mono';
+    color: #3D5F66;
+   
+    margin-bottom: -1vw;
+}
+.MessageRow
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 15vw;
+    flex-direction: row;
+    height: 3vw;
+    gap: 0vw;
+    margin-top: 2.5vw;
+    margin-left: 1.3vw;
+}
+
+.MessageImage
+{
+    width: 3vw;
+    height: auto;
+}
+.MessageLabel
+{
+    font-size: 1.1vw;
+    font-family: 'Arame-Mono';
+    margin-top: 0.1vw;
+}
+.InfoRow
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 59vw;
+    flex-direction: row;
+    height: 29vw;
+    gap: 0vw;
+   
+}
+.InfoCollumn1,
+.InfoCollumn
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 34vw;
+    flex-direction: column;
+    height: 29vw;
+    gap: 0vw;
+   
+    z-index: 1;
+}
+.InfoCollumn1
+{
+   width: 25vw;
+}
+
+.AboutExpBkg
+{
+    width: 33vw;
+    height: 30.5vw;
+}
+
+.RoleBkg
+{
+    width: 24vw;
+    height: 10vw;
+}
+.SkillsBkg
+{
+    width: 24vw;
+    height: 17vw;
+}
+
+.AboutExp{
+    position:absolute;
+    z-index: 2;
+    font-size: 1.6vw;
+    font-family: 'Arame-Mono';
+    color: black;
+    margin-top: -24vw;
+    margin-left: -15vw;
+
+    
+}
+.Role
+{
+    position:absolute;
+    z-index: 2;
+    font-size: 1.6vw;
+    font-family: 'Arame-Mono';
+    color: black;
+    margin-top: -24vw;
+    margin-left: -16.5vw;
+}
+.RoleEdt{
+    position:absolute;
+    z-index: 2;
+    font-size: 1vw;
+    font-family: 'Arame-Mono';
+    color: gray;
+    margin-top: -24.2vw;
+    margin-right: -15vw;
+}
+.Skills
+{
+    position:absolute;
+    z-index: 2;
+    font-size: 1.6vw;
+    font-family: 'Arame-Mono';
+    color: black;
+    margin-top: -2vw;
+    margin-left: -15.7vw;
+}
+.SkillsEdt{
+    position:absolute;
+    z-index: 2;
+    font-size: 1vw;
+    font-family: 'Arame-Mono';
+    color: gray;
+    margin-top: -2.2vw;
+    margin-right: -15vw;
+}
+
+@font-face {
+    font-family: 'Arame-Mono';
+    src: url('../../public/fonts/Arame-Mono.ttf') format('truetype');
+}

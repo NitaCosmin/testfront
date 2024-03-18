@@ -1,0 +1,155 @@
+.HomeContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative; 
+    background-image: linear-gradient(to right, #D9d9d9, #048097); /* gradient linear de la roșu la galben */
+
+}
+
+.HomeBackground-STYLE {
+    width: 60vw;
+    height: auto; 
+    padding-top: 1.5vw;
+    z-index: 0;
+    margin: 0 auto; 
+}
+
+.HomeContent{
+    position: absolute; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Separator-STYLE {
+    top :-9.37vw;
+    position: absolute; 
+    height: 20.25vw;
+    width: auto;
+    transition: transform 0.3s ease; 
+
+}
+
+.ChoiceLabel:hover ~ .Separator-STYLE {    
+    transform: translateX(10%);
+}
+ .ChoiceLabel1:hover ~ .Separator-STYLE {    
+    transform: translateX(-10%);
+}
+
+.Line-STYLE {
+    position: absolute; 
+    top: -15vw; 
+    left:-4.15vw; 
+    z-index: 2;
+    width: 33.75vw;
+    height: auto;
+}
+
+
+.Line1-STYLE
+{
+
+    position: absolute; 
+    top: 15.75vw; 
+    right:-4.15vw; 
+    z-index: 2;
+    width: 33.75vw;
+    height: auto;
+   
+}
+
+.Ellipse-STYLE
+{
+   position:absolute;
+    top: 15vw; 
+    width: 1.6vw;
+    height: auto;
+    right: -6.3vw;
+    
+}
+
+.Ellipse1-STYLE
+{
+    position:absolute;
+    top: 15vw; 
+    width: 1.65vw;
+    height: auto;
+    right: -8.4vw;
+}
+
+.Ellipse2-STYLE
+{
+    position:absolute;
+    top: 17.1vw; 
+    width: 1.6vw;
+    height: auto;
+    right: -6.37vw;
+}
+
+.NameLabel
+{
+    position: absolute; 
+    top: 13.5vw; 
+    color: white;
+    font-family: 'Arame-Mono', sans-serif;
+    font-size: 1.72vw;
+    font-weight: bold;
+    left: -27.75vw;
+    letter-spacing: 0.08vw;
+}
+
+
+.ChoiceLabel {
+    position: absolute; 
+    top: -11.1vw; 
+    left: -26.25vw;
+    color: white;
+    font-family: 'Arame-Mono', sans-serif;
+    font-size: 6.75vw;
+    font-weight: bold;
+    letter-spacing: 0.1vw;
+    transition: transform 0.3s ease; 
+    transform-origin: center;
+}
+
+.ChoiceLabel1
+{
+    position: absolute; 
+    top:4.5vw; 
+    right: -26.25vw;
+    color: white;
+    font-family: 'Arame-Mono', sans-serif;
+    font-size: 6.75vw;
+    font-weight: bold;
+    letter-spacing: 0.1vw;
+    transition: transform 0.3s ease; 
+    transform-origin: center;
+}
+
+
+
+
+
+
+.ChoiceLabel:hover {
+    transform: translateY(7%) scale(1.18);
+}
+
+.ChoiceLabel1:hover {
+    transform: translateY(-8%) scale(1.18);
+}
+
+
+
+
+
+@font-face {
+    font-family: 'Arame-Mono';
+    src: url('../../public/fonts/Arame-Mono.ttf') format('truetype');
+}

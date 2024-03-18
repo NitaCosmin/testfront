@@ -1,0 +1,171 @@
+.HomeContainer-SingUp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 97vh;
+    position: relative; 
+}
+.NameLabel-SingUp
+{
+    user-select: none;
+}
+
+.HomeBackground-STYLE-SingUp {
+    width: 60vw;
+    height: auto; 
+    padding-top: 1.5vw;
+    z-index: 0;
+    margin: 0 auto; 
+}
+
+.HomeContent-SingUp{
+    position: absolute; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+
+.Line-STYLE-SingUp {
+    position: absolute; 
+    top: -15vw; 
+    right:-4.15vw; 
+    z-index: 2;
+    width: 33.75vw;
+    height: auto;
+}
+
+
+.Line1-STYLE-SingUp
+{
+
+    position: absolute; 
+    top: 15.75vw; 
+    right:-4.15vw; 
+    z-index: 2;
+    width: 33.75vw;
+    height: auto;
+   
+}
+
+.Ellipse-STYLE-SingUp
+{
+    position:absolute;
+    top: 15vw; 
+    width: 1.6vw;
+    height: auto;
+    right: -6.3vw;
+  
+    
+}
+
+.Ellipse1-STYLE-SingUp
+{
+    position:absolute;
+    top: 15vw; 
+    width: 1.65vw;
+    height: auto;
+    right: -8.4vw;
+}
+
+.Ellipse2-STYLE-SingUp
+{
+    position:absolute;
+    top: 17.1vw; 
+    width: 1.6vw;
+    height: auto;
+    right: -6.37vw;
+}
+
+.NameLabel-SingUp
+{
+    position: absolute; 
+    top: -16.87vw; 
+    color: white;
+    font-family: 'Arame-Mono', sans-serif;
+    font-size: 1.72vw;
+    font-weight: bold;
+    left: -27.75vw;
+    letter-spacing: 0.08vw;
+}
+
+
+.ChoiceLabel-SingUp {
+    position: absolute; 
+    top: -17.79vw; 
+    right: -27.75vw;
+    color: white;
+    font-family: 'Arame-Mono', sans-serif;
+    font-size: 4.87vw;
+    font-weight: bold;
+    letter-spacing: 0.1vw;
+    transition: transform 0.3s ease; 
+    transform-origin: center;
+}
+
+.textbox-SingUp
+{
+    width: 30vw;
+    height: auto;
+    background-color: #048097;
+    text-align: center;
+    border: none;
+    font-size: 2.2vw;
+    color: white;
+    padding: 0vw;
+    overflow: auto; 
+    
+}
+
+.textbox-SingUp::placeholder {
+    color: white; 
+    text-align: center;
+    font-family: Arame-Mono, sans-serif;
+
+}
+.textbox-SingUp:focus {
+    outline: none; /* Remove default focus outline */
+}
+.SingUp
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Collumn-Input-SingUp {
+    position: absolute; 
+    z-index: 2;
+    top:-4.5vw;
+    width: 30vw;
+    height: auto;
+    display: flex;
+    flex-direction: column; /* Set the flex direction to column */
+    justify-content: center;
+    align-items: center;
+    gap:2.25vw;
+}
+
+.button-SignUp{
+    position: absolute; 
+    top: 14.25vw; 
+    width:11.25vw;
+    height:3.37vw;
+    color: black;
+    font-family: 'Arame-Mono', sans-serif;
+    font-size: 1.5vw;
+    right : -24.75vw;
+    letter-spacing: 0.08vw;
+    background-color:#FFD600;
+    border:0.1vw solid #b98a00;
+    border-radius: 1.12vw;
+}
+
+@font-face {
+    font-family: 'Arame-Mono';
+    src: url('../../public/fonts/Arame-Mono.ttf') format('truetype');
+}

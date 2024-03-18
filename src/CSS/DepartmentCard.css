@@ -1,0 +1,83 @@
+
+.DepCardContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 18.5vw; 
+    height: 25vw;
+    background-color:transparent;
+    flex-direction: column;
+    transform: scale(0.6);
+    margin-top: 0.3vw;
+    
+    
+}
+
+.DepBeckgroundCard-Style {
+    width: 30vw;
+    height: auto;
+   
+}
+.DepCardContent
+{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap:0vw;
+}
+
+.DepImg-Style
+{
+    width: 29.5vw;
+    height: auto;
+    margin-top: -44.7vw;
+}
+.FieldContentLabel{
+font-family: 'Arame-Mono', sans-serif;
+font-size: 2.5vw;
+}
+.FieldNameLabel{
+font-family: 'Arame-Mono', sans-serif;
+font-size: 1vw;
+}
+
+.FildGap
+{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap:0.1vw;
+}
+.DepCardFields
+{
+    margin-left: 1.7vw;
+}
+
+.expendbutton{
+    margin-top: 0vw;
+    margin-left: 23.5vw;
+    display: inline-flex; /* Change display to inline-flex for vertical alignment */
+    align-items: center; /* Vertically align content */
+   
+}
+.expendbutton .p-button {
+   
+    background-color: #048097 !important; /* Use !important to override PrimeReact styles */
+    width: 5vw;
+    height: 5vw;
+    border-radius: 0.7vw;
+    border: none;
+    font-size: 4vw;
+    font-family: "Goudy Stout", sans-serif;
+    color: white;
+    padding: 0vw;
+    margin: 0vw;
+}
+
+
+@font-face {
+    font-family: 'Arame-Mono';
+    src: url('../../public/fonts/Arame-Mono.ttf') format('truetype');
+}

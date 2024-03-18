@@ -1,0 +1,106 @@
+.sidebar {
+    user-select: none;
+    position: fixed;
+    top: 2%;
+    left: 1%;
+    height: 96%;
+    max-width: 8vw;
+    min-width: 7vw;
+    background-color: #ECFCFF; /* culoarea de fundal a barei laterale */
+    border-radius: 2.5vw;
+    display: flex; /* Utilizarea flexbox */
+    flex-direction: column; /* Direcția coloanelor */
+    align-items: center; /* Așezați elementele pe axa orizontală */
+}
+
+#navbar {
+    list-style: none;
+    padding: 1vw;
+    display: flex; /* Utilizarea flexbox */
+    flex-direction: column; /* Direcția coloanelor */
+    justify-content: space-between; /* Așezați elementele între spațiile libere */
+    height: 100%; /* Asigurați-vă că înălțimea este 100% pentru a utiliza space-between */
+    align-items: center; /* Așează iconurile pe axa verticală în mijlocul barei laterale */
+}
+#navbar li {
+    margin-bottom: 55%;
+}
+
+#navbar li a {
+    display: flex; /* Utilizarea flexbox */
+    padding: 0.1vw;
+}
+
+img{
+    width: 2.5vw;
+    height: 2.5vw;
+    display: flex; /* Utilizarea flexbox */
+    align-items: center; /* Așezați elementele pe axa orizontală */
+    padding: 0.4vw;
+    color: #339EB1;
+}
+
+#navbar li.active .tooltip {
+    opacity: 1;
+    transform:  translateY(2%);
+    
+}
+
+.tooltip{
+    pointer-events: none;
+    user-select: none;
+    position: absolute;
+    font-family: 'Arame-Mono', sans-serif;
+    height: 10%;
+    width: 100%;
+    left: 0%;
+    font-size: 0.9vw;
+    background: transparent;
+    text-align: center;
+    transform:  translateY(-20%);
+    opacity: 0;
+    color: #048097;
+}
+
+#navbar li.active .tooltip {
+    opacity: 1;
+    transform:  translateY(2%);
+}
+
+#navbar li:last-child {
+    margin-top: 50%;
+    margin-bottom: 10;
+}
+#navbar li:nth-last-child(2)
+ {
+    margin-top: auto;
+    margin-bottom: 0;
+}
+
+ 
+
+#navbar li:first-child {
+    margin-top: 50%;
+}
+
+#navbar li.active a {
+
+    border-radius: 1vw;
+    background-color: #339EB1;
+}
+
+#navbar li a:hover ~.tooltip
+
+{
+    opacity: 1;
+    transition: all 0.5s ease;
+    transform:  translateY(2%);
+
+}
+
+.logoutButton {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+  }

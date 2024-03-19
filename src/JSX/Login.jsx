@@ -22,14 +22,16 @@ const Login = () => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
-  
+
   const handleSubmit = async (e) => {
-    
     e.preventDefault();
     try {
-      const response = await axios.post('https://autobotzi-ccec90c77ecb.herokuapp.com/auth/sign-in', formData);
+      const response = await axios({
+        method: "POST",
+        url: 'https://autobotzi-ccec90c77ecb.herokuapp.com/auth/sign-in',
+        data: formData
+      });
       const { token } = response.data;
-      
       sessionStorage.setItem('token', token);
       sessionStorage.setItem('email', formData.email);
       console.log("Login successful. Token:", token);
@@ -38,13 +40,12 @@ const Login = () => {
     } catch (error) {
       setShowModal(true); // Set showModal to true to open the modal
       console.error("Login failed: ", error);
-      
-      console.log("Login successful. email:", formData.email);
     }
   };
+  
 
   return (
-    <div className="HomeContainer-Login">
+    <div className="HomeContainer">
       <img src={HomeBackground} alt="" className="HomeBackground-STYLE-Login" />
       <div className="HomeContent-SingUp">
         <img src={Line} alt="" className="Line-STYLE-Login" />
@@ -60,7 +61,7 @@ const Login = () => {
         <div className="ChoiceLabel-Login">Login</div>
         <form className="Login" onSubmit={handleSubmit}>
           <div className="Collumn-Input-Login">
-            <input type="email" className="textbox-Login" id="email" name="email" placeholder="E mail" value={formData.email} onChange={handleChange} required />
+            <input type="email" className="textbox-Login" id="email" name="email" placeholder="Email" value={formData.email} onChange={handleChange} required ></input>
             <input type="password" className="textbox-Login" id="password" name="password" placeholder="Password" value={formData.password} onChange={handleChange} required />
           </div>
           <button type="submit" className="button-Login">Continue</button>

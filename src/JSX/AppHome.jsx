@@ -24,7 +24,7 @@ const AppHome = () => {
   const [error, setError] = useState(null);
   const [editing, setEditing] = useState(false); // State to track editing status
   const [userToEdit, setUserToEdit] = useState(null); // State to store the user being edited
-
+  const [projectDetails, setProjectDetails] = useState({});
   useEffect(() => {
     const email = sessionStorage.getItem('email');
     if (email) {
@@ -98,37 +98,39 @@ const AppHome = () => {
 
   // Function to handle delete action
   // Function to handle delete action
-  const handleDelete = async (email, role) => {
-    try {
+ // Function to handle delete action
+const handleDelete = async (email) => {
+  try {
       const token = sessionStorage.getItem('token');
       if (!token) {
-        console.error("Token not found in sessionStorage.");
-        return;
+          console.error("Token not found in sessionStorage.");
+          return;
       }
-  
-      const requestBody = {
-        email: email,
-        role: role
-      };
-  
-      console.log("Request Body:", requestBody); // Log the request body
-  
-      const config = {
-        headers: {
-          Authorization: `Bearer ${token}`,
-          'Content-Type': 'application/json'
-        },
-        data: requestBody
-      };
-  
-      await axios.delete('https://autobotzi-ccec90c77ecb.herokuapp.com/user/roles/delete', config);
-      // After successful deletion, refetch users
+
+      // Encode the email using encodeURIComponent
+      const encodedEmail = encodeURIComponent(email);
+
+      // Construct the URL with the encoded email parameter
+      const url = `https://autobotzi-ccec90c77ecb.herokuapp.com/user/delete-everywhere?email=${encodedEmail}`;
+
+      // Make the DELETE request
+      await axios.delete(url, {
+          headers: {
+              Authorization: `Bearer ${token}`
+          }
+      });
+
+      // After successful deletion, refetch users by department
       fetchUsersByDepartment(departmentName);
-    } catch (error) {
+  } catch (error) {
       console.error("Error deleting user:", error);
-    }
-  };
+  }
+};
+
+
+ 
   
+ 
   
 
 
@@ -146,12 +148,13 @@ const AppHome = () => {
             <div className="AboutProject-Home"><p className="titleDep-Home">About Project</p></div>
           </div>
           <img src={AboutProjectBackground} alt="" className="AboutProjectBackground" />
+         
         </div>
       </div>
       <div className="OthersContainer">
         <div className="ProfileRectangle">
           <img src={RectangleBackground} alt="" className="RectangleBackground" />
-          <img src={EditIcon} alt="" className="EditIcon" />
+          <Link to="/profile" className=""> <img src={EditIcon} alt="" className="EditIcon" /></Link>
           <p className="titleProfile">Profile</p>
           <img src={PhotoProfile} alt="" className="PhotoProfile" />
           {user && (
